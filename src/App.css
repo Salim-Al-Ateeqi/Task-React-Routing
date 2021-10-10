@@ -1,62 +1,84 @@
-
-
-.home{
-    text-align: center;
-
+.home {
+  text-align: center;
 }
-.home img{
-    display: block;
+.home img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-
 .searchBar {
-    padding: 0.5rem;
-    margin: 1rem auto;
-    display: block;
-    width: 40%;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 40%;
 }
 
 .listWrapper {
-    align-items: center;
+  align-items: center;
   justify-content: center;
   display: flex;
 }
 
 .productWrapper {
-    margin: 20px;
+  margin: 20px;
 }
-.productWrapper img{
-    width: 200px;
-    height: 200px;
+.productWrapper img {
+  width: 200px;
+  height: 200px;
 }
-.productWrapper p{
-    text-align: center;
-}
-
-
-.detail{
-   
-    text-align: center;
-
+.productWrapper p {
+  text-align: center;
 }
 
-.detail img{
-    width: 300px;
+.detail {
+  text-align: center;
 }
 
-.home button{
-    margin:15px
+.detail img {
+  width: 300px;
 }
 
-.darktheme{
-    background-color: black;
-    color: white;
+.home button {
+  margin: 15px;
 }
 
-.lighttheme{
-    background-color: white;
-    color: black;
+.darktheme {
+  background-color: black;
+  color: white;
+}
+
+.lighttheme {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.button {
+  display: block;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cookie {
+  border-radius: 50%;
+  box-shadow: rgba(255, 255, 255) 0px 54px 55px,
+    rgba(255, 255, 255) 0px -12px 30px, rgba(255, 255, 255) 0px 4px 6px,
+    rgba(255, 255, 255) 0px 12px 13px, rgba(255, 255, 255) 0px -3px 5px;
 }

@@ -1,21 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Redirect, useParams } from "react-router";
+import products from "../products";
 
 function Detail() {
-
-    let cookie
-    return (
-        <div className="detail">
-            {cookie && // if there is cookie show its data 
-                <>
-                    <h5>{cookie.name}</h5>
-                    <img src={cookie.image} alt="cookie" />
-                    <p>{cookie.price} KD</p>
-                    <p>{cookie.description}</p>
-                </>}
-
-
-        </div>
-    )
+  const slug = useParams().detailSlug;
+  const detail = products.find((detail) => detail.slug === slug);
+  if (!detail) return <Redirect to="/" />;
+  return (
+    <div className="detail">
+      <>
+        <h5>{detail.name}</h5>
+        <img src={detail.image} alt="cookie" />
+        <p>{detail.price} KD</p>
+        <p>{detail.description}</p>
+      </>
+    </div>
+  );
 }
 
-export default Detail
+export default Detail;
