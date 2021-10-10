@@ -4,7 +4,7 @@ import products from "../products";
 
 function Detail() {
   const slug = useParams().detailSlug;
-  const detail = products.find((detail) => detail.slug === slug);
+  const detail = products.find((info) => info.slug === slug);
   if (!detail) return <Redirect to="/" />;
   return (
     <div className="detail">
