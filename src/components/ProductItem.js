@@ -6,9 +6,9 @@ const ProductItem = (props) => {
   return (
     <div className="productWrapper">
       <Link to={`/productlist/${product.slug}`}>
-        <img alt={product.name} src={product.image} />
+        <img alt={product.title} src={product.poster} />
 
-        <p>{product.name}</p>
+        <p>{product.title}</p>
         <p className="product-price">{product.price} KD</p>
       </Link>
     </div>

@@ -10,7 +10,7 @@ const ProductList = () => {
 
   const productList = products
     .filter((product) =>
-      product.name.toLowerCase().includes(query.toLowerCase())
+      product.title.toLowerCase().includes(query.toLowerCase())
     )
     .map((product) => <ProductItem product={product} key={product.id} />);
 
