@@ -7,10 +7,16 @@ const ProductItem = (props) => {
     <div className="productWrapper">
       <Link to={`/productlist/${product.slug}`}>
         <img alt={product.title} src={product.poster} />
-
-        <p>{product.title}</p>
-        <p className="product-price">{product.price} KD</p>
       </Link>
+      <h5>
+        <strong>
+          <p>{product.title}</p>
+        </strong>
+      </h5>
+
+      <div className="descLine">
+        <p className="product-price">Genre: {product.genres.join(" | ")}</p>
+      </div>
     </div>
   );
 };

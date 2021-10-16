@@ -1,19 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/cookie.png";
+import SubModal from "./Modal";
 
 function NavBar() {
   return (
-    <div className="navbar">
-      <Link to="/">
-        <img className="cookie" src={logo} alt="logo" width="50" />
-      </Link>
-      <Link to="/productlist" className="button">
-        Product List
-      </Link>
-      <Link to="/detail" className="button">
-        Details
-      </Link>
+    <div>
+      <nav className="navbar navbar-dark bg-light ">
+        {/* <!-- Navbar content --> */}
+        <Link to="/">
+          <img
+            className="navLogo"
+            src="https://cdn-icons-png.flaticon.com/512/4291/4291571.png"
+            alt="navLogo"
+          />
+        </Link>
+        <Link
+          to="/productlist"
+          type="button"
+          className="btn btn-outline-dark btn-lg"
+        >
+          Product List
+        </Link>
+
+        <SubModal />
+      </nav>
     </div>
   );
 }

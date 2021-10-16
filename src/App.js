@@ -1,11 +1,12 @@
-import Home from "./components/Home";
 // Components
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
 import ProductList from "./components/ProductList";
+import Detail from "./components/Detail";
+
 //styling
 import "./App.css";
-import Detail from "./components/Detail";
 import { Route, Switch } from "react-router";
-import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
         <Route exact path="/productlist">
           <ProductList />
         </Route>
-
         <Route exact path="/">
           <Home />
         </Route>

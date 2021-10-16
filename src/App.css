@@ -1,11 +1,21 @@
+body {
+  background-color: #212529 !important;
+}
+
 .home {
   text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 100px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .home img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  padding: 100px;
+  margin: auto;
+  width: 25%;
+  height: auto;
 }
 
 .searchBar {
@@ -16,17 +26,21 @@
 }
 
 .listWrapper {
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  color: white;
 }
 
 .productWrapper {
   margin: 20px;
 }
 .productWrapper img {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: auto;
 }
 .productWrapper p {
   text-align: center;
@@ -34,6 +48,7 @@
 
 .detail {
   text-align: center;
+  color: white;
 }
 
 .detail img {
@@ -44,41 +59,49 @@
   margin: 15px;
 }
 
-.darktheme {
-  background-color: black;
-  color: white;
-}
-
-.lighttheme {
-  background-color: white;
-  color: black;
-}
-
 .navbar {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 50px;
-  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px,
+    rgb(204, 204, 204) 0px 0px 0px 3px;
+}
+
+.navLogo {
+  width: 100px;
+}
+
+.descLine {
   display: flex;
-  justify-content: space-between;
-  background-color: bisque;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.button {
-  display: block;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
 
-.cookie {
-  border-radius: 50%;
-  box-shadow: rgba(255, 255, 255) 0px 54px 55px,
-    rgba(255, 255, 255) 0px -12px 30px, rgba(255, 255, 255) 0px 4px 6px,
-    rgba(255, 255, 255) 0px 12px 13px, rgba(255, 255, 255) 0px -3px 5px;
+.c1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.c2 {
+  height: 1500px;
+  transform: rotate(0deg);
+  animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }

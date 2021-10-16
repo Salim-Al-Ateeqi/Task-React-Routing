@@ -11,7 +11,7 @@ const SearchBar = (props) => {
     <input
       className="searchBar"
       onChange={(event) => checkLength(event.target.value)} //Cu
-      placeholder="Search for a cookie name"
+      placeholder="Search for a movie name"
     />
   );
 };
