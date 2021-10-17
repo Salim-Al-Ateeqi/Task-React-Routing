@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 const customStyles = {
   content: {
@@ -41,12 +42,19 @@ const SubModal = () => {
             Your E-mail: <input />
           </label>
           <label>
-            Social Security Number: <input />
+            Credit Card Number: <input />
           </label>
           <label>
-            Mother's Maiden Name: <input />
+            CVV Number: <input />
           </label>
         </form>
+        <input type="checkbox" className="checkbox" />
+        <div className="agreement">
+          I hereby agree to all terms and conditions
+        </div>
+        <Button className="center" variant="outline-success">
+          Submit
+        </Button>{" "}
       </Modal>
     </div>
   );

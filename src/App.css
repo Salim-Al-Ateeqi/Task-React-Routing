@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Thasadith&display=swap");
+
 body {
   background-color: #212529 !important;
 }
@@ -5,7 +7,7 @@ body {
 .home {
   text-align: center;
   color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Thasadith", sans-serif;
   margin: 100px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -69,7 +71,7 @@ body {
 }
 
 .navLogo {
-  width: 100px;
+  width: 50px;
 }
 
 .descLine {
@@ -84,24 +86,16 @@ body {
   text-align: right;
 }
 
-.c1 {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.text {
+  color: black;
+  text-align: left;
 }
 
-.c2 {
-  height: 1500px;
-  transform: rotate(0deg);
-  animation: spin 3s infinite linear;
+.checkbox {
+  float: left;
+  margin-top: 5px;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.agreement {
+  margin-left: 25px;
 }

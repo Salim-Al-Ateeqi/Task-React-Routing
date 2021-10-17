@@ -3,12 +3,9 @@ const products = [
     slug: "000001",
     title: "The Message",
     poster: "https://image.tmdb.org/t/p/w500/pG0qKcvbjUCic1h821kSEdCFghl.jpg",
-    poster2:
-      "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/11/25/thumbs/800x531/74796.jpg",
-    poster3:
-      "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/11/25/74802.jpg",
     overview:
       "The film begins with Muhammad sending an invitation to accept Islam to surrounding rulers: Heraclius, the Byzantine Emperor; the Patriarch of Alexandria; the Sasanian Emperor. Earlier Muhammad is visited by the angel Gabriel, which shocks him deeply. The angel asks him to start and spread Islam. Gradually, almost the entire city of Mecca begins to convert. As a result, more enemies will come and hunt Muhammad and his companions from Mecca and confiscate their possessions. Some of these followers fled to Abyssinia to seek refuge with the protection given by the king there. ",
+    cast: "Abdullah Gaith as Hamza, Muna Wassef as Hind, Hamdi Ghaith as Abu Sufyan ibn Harb, Ali Ahmed Salem as Bilal, Mahmoud Said as Khalid, Ahmad Marey as Zayd, Mohammad Larbi as Ammar, Hassan Joundi as Abu Jahl, Sana' Jamil as Sumayyah, Martin Benson as Khosrau II, Damien Thomas as Young Christian.",
     release_date: 9101977,
     genres: ["War", "Drama"],
   },
